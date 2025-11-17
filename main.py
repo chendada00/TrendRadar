@@ -521,7 +521,7 @@ class DataFetcher:
                 try:
                     data = json.loads(response)
                     results[id_value] = {}
-                    for index, item in enumerate(data.get("items", []), 1):
+                    for index, item in enumerate(data.get("items", [])[:10], 1):
                         title = item["title"]
                         url = item.get("url", "")
                         mobile_url = item.get("mobileUrl", "")
