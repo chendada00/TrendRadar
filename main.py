@@ -2313,7 +2313,7 @@ def render_html_content(
             
             <div class="footer">
                 <div class="footer-content">
-        
+        """
 
     if update_info:
         html += f"""
